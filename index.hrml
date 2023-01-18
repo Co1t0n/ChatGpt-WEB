@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>OpenAI API</title>
+    </head>
+    <body>
+        <form method="post">
+            <label for="prompt">Ask Me Anything:</label>
+            <input type="text" name="prompt" id="prompt">
+            <input type="submit" value="Submit">
+        </form>
+        {% if response %}
+            <p>{{ response }}</p>
+        {% endif %}
+    </body>
+</html>
